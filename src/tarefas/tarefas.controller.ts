@@ -1,21 +1,11 @@
-// tarefas/tarefas.controller.ts
-import {
-  Body,
-  Controller,
-  Delete,
-  Get,
-  Param,
-  ParseIntPipe,
-  Patch,
-  Post,
-} from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, ParseIntPipe, Patch, Post } from '@nestjs/common';
 import { CreateTarefaDto } from './dto/create-tarefa.dto';
 import { UpdateTarefaDto } from './dto/update-tarefa.dto';
 import { TarefasService } from './tarefas.service';
 
 @Controller('tarefas')
 export class TarefasController {
-  constructor(private readonly tarefasService: TarefasService) {}
+  constructor(private readonly tarefasService: TarefasService) { }
 
   @Get()
   listar() {

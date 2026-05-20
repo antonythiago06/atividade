@@ -1,4 +1,3 @@
-// tarefas/tarefas.module.ts
 import { Module } from '@nestjs/common';
 import { TarefasController } from './tarefas.controller';
 import { TarefasService } from './tarefas.service';
